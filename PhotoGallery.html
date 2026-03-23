@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Bismark Kweku Mensah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.8em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-item:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+        .gallery-caption {
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .caption-title {
+            font-size: 1.3em;
+            color: #143f8a;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .caption-date {
+            font-size: 0.9em;
+            color: #7e22ce;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .caption-text {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #111050;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            .gallery-image {
+                height: 220px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        
+        <header>
+            <h1>Photo Gallery</h1>
+            <p>A few moments from my journey: school, projects, and everyday life.</p>
+        </header>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Picture6.JPG.jpeg" alt="Family Reunion" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Family Reunion Mass 2025</div>
+                    <div class="caption-date">August 2025</div>
+                    <div class="caption-text">"Gathering in love and gratitude, family comes together in faith. Celebrating bonds that last a lifetime. Joyful moments, cherished memories 💕".</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture7.JPG.jpeg" alt="Friends Adventure" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Picture with Friends.</div>
+                    <div class="caption-date">July 2025</div>
+                    <div class="caption-text">"Surrounded by the ones who make life brighter 😊 #FriendshipGoals #GoodTimes".</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture8.JPG.jpeg" alt="After Church as catholic" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">After Church,SundayVibes</div>
+                    <div class="caption-date">December 2025</div>
+                    <div class="caption-text">A peaceful moment after attending mass at our local church. The atmosphere was filled with devotion and community spirit, reminding me of the importance of faith and togetherness.</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture10.JPG.jpeg" alt="Coding Bootcamp and Computer Hardware Conference" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Coding Bootcamp and Computer Hardware Conference</div>
+                    <div class="caption-date">May 2025</div>
+                    <div class="caption-text">Completed an intensive coding bootcamp with amazing classmates. We spent weeks learning new technologies, debugging code, and pushing each other to grow. This photo captures a moment during our study session.</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture9.JPG.jpeg" alt="Matriculation Ceremony" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Matriculation Ceremony</div>
+                    <div class="caption-date">March 2025</div>
+                    <div class="caption-text">Celebrating the start of my academic journey with my family and friends..</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture11.JPG.jpeg" alt="Volunteering" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Community Volunteer Day</div>
+                    <div class="caption-date">March 2024</div>
+                    <div class="caption-text">Teaching web development to underprivileged youth at the local community center. Seeing the spark of interest in their eyes when they built their first website was incredibly rewarding. Giving back to the community is one of my greatest passions.</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture14.JPG.jpeg" alt="Troubleshooting" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Troubleshooting</div>
+                    <div class="caption-date">October 2025</div>
+                    <div class="caption-text">"Navigating challenges and learning moments during my attachment period. Turning obstacles into opportunities 💡 #AttachmentJourney #Troubleshooting".</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture15.JPG.jpeg" alt="Birthday Celebration" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Birthday Celebration </div>
+                    <div class="caption-date">September 2025</div>
+                    <div class="caption-text">celebration of life the good lord has given me.</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Picture12.JPG.jpeg" alt="Internship at NHIS" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">NHIS Attachment</div>
+                    <div class="caption-date">September 2025</div>
+                    <div class="caption-text">During my Attachment at NHIS Elmina-KEEA, I supported IT operations and gained hands-on experience troubleshooting real-world technical issues.</div>
+                </div>
+            </div>
+  <div class="gallery-item">
+                <img src="Picture22.JPG.jpeg" alt="Culture Fest." class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Culture Fest</div>
+                    <div class="caption-date">October 2025</div>
+                    <div class="caption-text">"Vibes on a hundred! 🎉 Celebrating traditions, sharing stories, and making memories at Culture Fest! #CultureFest #UnityInDiversity".</div>
+                </div>
+            </div>  
+                 <div class="gallery-item">
+                <img src="Picture23.JPG.jpeg" alt="Children in Tech." class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Children in Tech.</div>
+                    <div class="caption-date">October 2025</div>
+                    <div class="caption-text">"Empowering young minds, one code at a time 😊 Sharing the love of tech with the next generation #ITforKids #FutureMakers".</div>
+                </div> 
+        </div>
+          <div class="gallery-item">
+                <img src="Picture24.JPG.jpeg" alt="Information Technology(IT) Examination" class="gallery-image">
+                <div class="gallery-caption">
+                    <div class="caption-title">Information Technology(IT) Examination</div>
+                    <div class="caption-date">October 2025</div>
+                    <div class="caption-text">"Nerves on edge, skills on show! 🧠 Putting knowledge to the test #ITexam #TechTest".</div>
+                </div>
+          </div>
+        </div>
+    </div>
+    </body>
+        <footer>
+                         <p>&copy; 2026 Bismark Kweku Mensah. All rights reserved.</p>
+        </footer>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>

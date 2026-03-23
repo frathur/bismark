@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents - Bismark Kweku Mensah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family:'Poppins',sans-serif;
+            background:linear-gradient(135deg,#f1f1f1 0%,#e8eaec 50%,#f7f7f7 100%);
+            color:#333;
+            min-height:100vh;
+            padding:20px;
+        }
+        .container{max-width:1200px;margin:0 auto;}
+        header{
+            text-align:center;
+            padding:60px 20px;
+            background:linear-gradient(135deg,rgba(255,255,255,0.95),rgba(255,255,255,0.88));
+            border-radius:15px;
+            margin-bottom:40px;
+            box-shadow:0 10px 40px rgba(0,0,0,0.2);
+        }
+        header h1{font-size:3em;background:linear-gradient(135deg,#1e3c72,#4105a1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;}
+        header p{font-size:1.1em;color:#555;}
+        .doc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+        .doc-card{background:linear-gradient(135deg,rgba(255,255,255,0.98),rgba(255,255,255,0.92));border-radius:15px;padding:30px;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:transform 0.3s ease,box-shadow 0.3s ease;text-align:center;}
+        .doc-card:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(0,0,0,0.2);}
+        .doc-thumb{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:20px;}
+        .doc-title{font-size:1.3em;color:#1e3c72;margin-bottom:10px;font-weight:700;}
+        .doc-desc{font-size:0.95em;color:#555;line-height:1.6;margin-bottom:15px;}
+        .download-btn{display:inline-block;padding:12px 25px;background:linear-gradient(135deg,#1e3c72,#7e22ce);color:white;text-decoration:none;border-radius:25px;transition:all 0.3s ease;}
+        .download-btn:hover{transform:scale(1.05);box-shadow:0 5px 20px rgba(126,34,206,0.4);}
+        .back-button{display:inline-block;padding:12px 30px;background:linear-gradient(135deg,#1e3c72,#7e22ce);color:white;text-decoration:none;border-radius:25px;transition:all 0.3s ease;margin-bottom:20px;}
+        .back-button:hover{transform:scale(1.05);box-shadow:0 5px 20px rgba(126,34,206,0.4);}        
+        footer{text-align:center;padding:20px;color:rgb(28, 3, 77);margin-top:40px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        <header>
+            <h1>Documents</h1>
+            <p>Certifications & Supporting Documents for Internship Applications</p>
+        </header>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <img src="Picture25.JPG.jpeg" alt="IBM Certificate" class="doc-thumb">
+                <div class="doc-title">IBM Certificate</div>
+                <div class="doc-desc">Official  certificate of Digital Literacy from IBM.</div>
+                <a href="Picture25.JPG.jpeg" download class="download-btn">Download</a>
+            </div>
+            <div class="doc-card">
+                <img src="Picture26.JPG.jpeg" alt="Web Development Diploma" class="doc-thumb">
+                <div class="doc-title">Letter of Recommendation</div>
+                <div class="doc-desc">Official letter of recommendation from a supervisor.</div>
+                <a href="Picture26.JPG.jpeg" download class="download-btn">Download</a>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>&copy; 2026 Bismark Kweku Mensah. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

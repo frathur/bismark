@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Bismark Kweku Mensah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:'Poppins',sans-serif;
+            background: #f4f4f4;
+            color:#333;
+            min-height:100vh;
+            padding:20px;
+        }
+        .container{max-width:800px;margin:0 auto;}
+        header{text-align:center;padding:40px 20px;color:#333;}
+        .logo{width: 140px; height: 140px; border-radius: 50%; display: block; margin: 0 auto 20px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);}
+        .logo img {width: 100%; height: 100%; object-fit: cover; display: block;}
+        .social-links{margin:10px 0 20px;text-align:center;}
+        .social-links a{color:#1e3c72;text-decoration:none;margin:0 8px;}
+        .social-links a:hover{color:#7e22ce;}
+        form{background:#fff;padding:30px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+        label{display:block;font-weight:600;margin-bottom:5px;color:#1e3c72;}
+        input,textarea{width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;font-size:1em;}
+        textarea{resize:vertical;min-height:120px;}
+        .form-buttons{display:flex;gap:20px;}
+        .btn-submit,.btn-reset{flex:1;padding:12px 0;font-size:1em;font-weight:600;color:white;border:none;border-radius:5px;cursor:pointer;}
+        .btn-submit{background:#1e3c72;}
+        .btn-submit:hover{background:#16365b;}
+        .btn-reset{background:#7e22ce;}
+        .btn-reset:hover{background:#5a15a0;}
+        .back-button{display:inline-block;padding:10px 20px;background:#1e3c72;color:white;text-decoration:none;border-radius:5px;margin-bottom:20px;}
+        .back-button:hover{background:#2a4a7a;}
+        footer{text-align:center;padding:20px;color:#1d44c5;margin-top:40px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        <header>
+            <div class="logo"><img src="Picture19.JPG.jpeg" alt="Logo"></div>
+            <h1>Contact Me</h1>
+            <div class="social-links">
+                <a href="https://wa.me/233545986719" target="_blank">WhatsApp</a> |
+                <a href="https://github.com/mensahkwekubismark-lgtm" target="_blank">GitHub</a> |
+                <a href="https://twitter.com/BISMARKKWE24788" target="_blank">Twitter</a>
+            </div>
+        </header>
+        <form action="" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="form-buttons">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+        <footer>
+            <p>&copy; 2026 Bismark Kweku Mensah</p>
+        </footer>
+    </div>
+</body>
+</html>

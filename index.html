@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bismark Kweku Mensah</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            color: #231b69;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #231b69;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            text-align: center;
+            padding: 120px 20px 80px;
+            background: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #1e3c72;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #251668;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about, .skills, .projects, .testimonials, .contact {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .testimonials {
+            max-width: 1000px;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        
+        }
+        .skill {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            font-weight: bold;
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .project {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(15, 84, 187, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(8, 25, 100, 0.342);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(38, 8, 145, 0.15);
+        }
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .testimonial p {
+            margin: 0;
+            font-size: 1rem;
+            color: #0b126e;
+        }
+        .testimonial h4 {
+            margin: 10px 0 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #0b0952;
+        }
+        @media (max-width: 600px) {
+            .testimonial {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .testimonial img {
+                margin-bottom: 15px;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            color: #131264;
+        }
+        .logo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        #student-info {
+            font-size: 1.1em;
+            margin: 5px 0 20px;
+            font-weight: bold;
+        }
+        .social-links {
+            margin: 10px 0 20px;
+        }
+        .social-links a {
+            color: #1e3c72;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="AboutMe.html">About Page</a>
+        <a href="PhotoGallery.html">Gallery</a>
+    </nav>
+    <header>
+        <div class="logo"><img src="Picture19.JPG.jpeg" alt="Logo"></div>
+        <h1>BISMARK KWEKU MENSAH</h1>
+        <p id="student-info"><strong>Student ID:</strong> PD/ICT/24/037</p>
+        <p>Web Developer | Designer | Creative Thinker</p>
+        <a href="#about" class="btn">Learn More</a>
+        <a href="AboutMe.html" class="btn">About</a>
+        <a href="ReferenceSection.html" class="btn">References</a>
+        <a href="PhotoGallery.html" class="btn">Photo Gallery</a>
+        <a href="DocumentsSection.html" class="btn">Documents</a>
+        <a href="ContactMe.html" class="btn">Contact</a>
+    </header>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Bismark Kweku Mensah, a passionate web developer and designer with a keen eye for creating intuitive and visually appealing digital experiences. With a background in ICT and hands-on experience in full-stack development, I specialize in building responsive websites and applications using modern technologies like HTML, CSS, JavaScript, and backend frameworks. I believe in clean code, user-centered design, and continuous learning to stay ahead in the ever-evolving tech landscape.</p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML5 & CSS3</div>
+            <div class="skill">JavaScript (ES6+)</div>
+             <div class="skill">Database Management (MySQL, MongoDB)</div>
+            <div class="skill">System Administration</div>
+            
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="Picture1.JPG.jpeg" alt="Personal Portfolio Screenshot">
+                <h3>Personal Portfolio</h3>
+                <p>This website showcasing my skills and projects.</p>
+            </div>
+            <div class="project">
+                <img src="Picture2.JPG.jpeg" alt="Project 1 Screenshot">
+                <h3>Portfolio for client</h3>
+                <p> My first project for client which was a portfolio.</p>
+            </div>
+            <div class="project">
+                <img src="Picture20.JPG.jpeg" alt="Project 2 Screenshot">
+                <h3>ECOWAS identity card claimings</h3>
+                <p>This project involved verifying the ECOWAS card of minors to ensure all information was accurate and belongs to the rightful owner.</p>
+            </div>
+            <div class="project">
+                <img src="Picture21.JPG.jpeg" alt="Project 3 Screenshot">
+                <h3>ECOWAS Identity Card and NHIS Card Verification</h3>
+                <p>This project involved verifying the authenticity of ECOWAS and NHIS cards to ensure all information was accurate and belongs to the rightful owner.</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <img src="Picture16.JPG.jpeg" alt="H.E Ahmed Tjani">
+                <p>"Bismark's expertise in web development transformed our online presence. His attention to detail and timely delivery exceeded our expectations."</p>
+                <h4>- H.E Ahmed Tjani, S.R.C President (Takoradi Technical University)</h4>
+            </div>
+            <div class="testimonial">
+                <img src="Picture17.JPG.jpeg" alt="Isaac Afful">
+                <p>"Collaborating with Bismark was a great experience. He brought innovative solutions and strong technical skills to our team project."</p>
+                <h4>- Isaac Afful, CEO of TrinityBa Repairing and Rewinding Services</h4>
+            </div>
+            <div class="testimonial">
+                <img src="Picture18.JPG.jpeg" alt="Shealtiel Mensah">
+                <p>"I highly recommend Bismark for any web development work. His professionalism and code quality are top-notch."</p>
+                <h4>- Shealtiel Mensah, Software Developer,coursemate and CEO of HOT BOYZ Enterprise.</h4>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>I'm always open to discussing new opportunities, collaborations, or just chatting about tech. Feel free to reach out!</p>
+        <a href="mailto:mensahkwekubismark@gmail.com">mensahkwekubismark@gmail.com</a></span>
+        <p>Phone<a href="tel:+233545986719">+233 54 598 6719</a></span>
+        <p>Location: Accra, Ghana</p>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://wa.me/233545986719" target="_blank" rel="noopener noreferrer">WhatsApp</a> |
+            <a href="https://github.com/mensahkwekubismark-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://twitter.com/BISMARKKWE24788" target="_blank" rel="noopener noreferrer">Twitter</a> |
+            <a href="https://www.facebook.com/BismarkKwekuMensah" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://www.tiktok.com/@mensahkwekubismark"  target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+        <p>&copy; 2026 Bismark Kweku Mensah. All rights reserved.</p>
+    </footer>
+</body>
+</html>

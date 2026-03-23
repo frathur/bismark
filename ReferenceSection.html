@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Bismark Kweku Mensah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .referee-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .referee-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        .referee-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            object-fit: cover;
+            border: 4px solid #7e22ce;
+            box-shadow: 0 5px 15px rgba(126, 34, 206, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .referee-card:hover .referee-photo {
+            transform: scale(1.1);
+        }
+        .referee-name {
+            font-size: 1.5em;
+            color: #1e3c72;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .referee-title {
+            font-size: 1em;
+            color: #7e22ce;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .contact-info {
+            text-align: left;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            color: #555;
+        }
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        .contact-label {
+            font-weight: 600;
+            color: #1e3c72;
+            margin-right: 10px;
+            min-width: 70px;
+        }
+        .contact-value {
+            color: #666;
+            word-break: break-word;
+        }
+        .contact-value a {
+            color: #7e22ce;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-value a:hover {
+            color: #1e3c72;
+            text-decoration: underline;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #2a4a7a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        
+        <header>
+            <h1>References</h1>
+            <p>Professional References & Contact Information</p>
+        </header>
+
+        <div class="references-grid">
+            <div class="referee-card">
+                <img src="Picture4.JPG.jpeg" alt="Mr. Anthony Prah" class="referee-photo">
+                <div class="referee-name">Mr.Anthony Prah</div>
+                <div class="referee-title">Senior Software Engineer and proprietor of Detlof Preparatory school Cape Coast-Elmina</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value"><a href="mailto:detlofprep@gmail.com">detlofprep@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone:</span>
+                        <span class="contact-value"><a href="tel:+233207098605">+233 20 709 8605</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referee-card">
+                <img src="Picture5.JPG.jpeg" alt="Mr. Kaleem Ishaque" class="referee-photo">
+                <div class="referee-name">Mr.Kaleem Ishaque</div>
+                <div class="referee-title">Department Head, Computer Science (Eguafo Abrem Senior High School)</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value"><a href="mailto:et686836@gmail.com">et686836@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone:</span>
+                        <span class="contact-value"><a href="tel:+233244737704">+233 24 473 7704</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referee-card">
+                <img src="Picture3.JPG.jpeg" alt="Mr. Charles Taylor" class="referee-photo">
+                <div class="referee-name">Mr. Charles Taylor</div>
+                <div class="referee-title">Project Manager, Digital Agency Pro @ TaylorTech Accra </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value"><a href="mailto:elizzytaylor23@gmail.com">elizzytaylor23@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone:</span>
+                        <span class="contact-value"><a href="tel:+233249007187">+233 24 900 7187</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Bismark Kweku Mensah. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
